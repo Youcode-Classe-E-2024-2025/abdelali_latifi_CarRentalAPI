@@ -1,5 +1,6 @@
 {
     "require": {
-        "laravel/sanctum": "^3.3"
+        "laravel/sanctum": "^3.3",
+        "darkaonline/l5-swagger": "8.6"
     }
 }
