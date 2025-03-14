@@ -23,7 +23,7 @@ Une API REST robuste développée avec Laravel pour la gestion des locations de 
 
 1. **Cloner le projet**  
    ```bash
-   git clone https://github.com/Youcode-Classe-E-2024-2025/oumaima_aitsaid_CarRentalAPI.git
+   git clone https://github.com/Youcode-Classe-E-2024-2025/abdelali_latifi_CarRentalAPI.git
    ```
 2. **Installer les dépendances**  
    ```bash
