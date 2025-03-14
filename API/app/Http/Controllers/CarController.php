@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Car;
+use App\Models\Cars;
 use Illuminate\Http\Request;
 
 class CarController extends Controller
 {
     public function index()
     {
-        $cars = Car::all();
+        $cars = Cars::all();
         return response()->json($cars);
     }
 
@@ -20,13 +20,13 @@ class CarController extends Controller
 
     public function store(Request $request)
     {
-        $car = Car::create($request->all());
+        $car = Cars::create($request->all());
         return response()->json($car, 201);
     }
 
     public function show($id)
     {
-        $car = Car::find($id);
+        $car = Cars::find($id);
         return response()->json($car);
     }
 
@@ -37,14 +37,14 @@ class CarController extends Controller
 
     public function update(Request $request, $id)
     {
-        $car = Car::find($id);
+        $car = Cars::find($id);
         $car->update($request->all());
         return response()->json($car);
     }
 
     public function destroy($id)
     {
-        Car::destroy($id);
+        Cars::destroy($id);
         return response()->json(null, 204);
     }
 }

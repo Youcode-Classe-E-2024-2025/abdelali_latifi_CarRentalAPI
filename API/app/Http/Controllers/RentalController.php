@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\rentals;
+use App\Models\Rentals;
 
-class rentalsControlle extends Controller
+class RentalController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $rentals = rentals::all();
+        $rentals = Rentals::all();
         return response()->json($rentals);
     }
 
@@ -29,7 +29,7 @@ class rentalsControlle extends Controller
      */
     public function store(Request $request)
     {
-        $rental = rentals::create($request->all());
+        $rental = Rentals::create($request->all());
         return response()->json($rental, 201);
     }
 
@@ -38,7 +38,7 @@ class rentalsControlle extends Controller
      */
     public function show(string $id)
     {
-        $rental = rentals::find($id);
+        $rental = Rentals::find($id);
         return response()->json($rental);
     }
 
@@ -55,7 +55,7 @@ class rentalsControlle extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $rental = rentals::find($id);
+        $rental = Rentals::find($id);
         $rental->update($request->all());
         return response()->json($rental);
     }
@@ -65,7 +65,7 @@ class rentalsControlle extends Controller
      */
     public function destroy(string $id)
     {
-       $rental = rentals::destroy($id);
+       $rental = Rentals::destroy($id);
         return response()->json(null, 204);
     }
 }

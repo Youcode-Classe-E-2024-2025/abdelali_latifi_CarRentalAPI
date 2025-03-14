@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\payments;
+use App\Models\Payments;
 
-class paymentsControlle extends Controller
+class PaymentsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $payments = payments::all();
+        $payments = Payments::all();
         return response()->json($payments);
     }
 
@@ -29,7 +29,7 @@ class paymentsControlle extends Controller
      */
     public function store(Request $request)
     {
-        $payment = payments::create($request->all());
+        $payment = Payments::create($request->all());
         return response()->json($payment, 201);
     }
 
@@ -54,7 +54,7 @@ class paymentsControlle extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $payment = payments::find($id);
+        $payment = Payments::find($id);
         $payment->update($request->all());
         return response()->json($payment);
     }
@@ -64,7 +64,7 @@ class paymentsControlle extends Controller
      */
     public function destroy(string $id)
     {
-        payments::destroy($id);
+        Payments::destroy($id);
         return response()->json(null, 204);
     }
 }
