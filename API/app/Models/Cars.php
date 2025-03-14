@@ -13,6 +13,7 @@ class Cars extends Model
         'name',
         'model',
         'color',
-        'year'
+        'year',
+        'pricePerDay',
     ];
 }

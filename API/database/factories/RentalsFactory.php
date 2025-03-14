@@ -20,12 +20,11 @@ class RentalsFactory extends Factory
     public function definition(): array
     {
         return [
+            
             'car_id'=> '1',
-            'name' => $this->faker->name(),
-            'email' => $this->faker->unique()->safeEmail(),
-            'phone' => $this->faker->phoneNumber(),
             'from' => $this->faker->date(),
-            'to' => $this->faker->date()
+            'to' => $this->faker->date(),
+            'total_price' => $this->faker->randomNumber(2),
         ];
     }
 }

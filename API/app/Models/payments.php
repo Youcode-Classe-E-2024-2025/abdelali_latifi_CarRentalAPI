@@ -12,9 +12,8 @@ class Payments extends Model
     protected $fillable = [
         'rental_id',
         'user_id',
+        'car_id',
         'amount',
         'payment_method',
-        'created_at',
-        'updated_at'
     ];
 }

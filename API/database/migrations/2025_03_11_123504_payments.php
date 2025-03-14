@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('rental_id')->constrained()->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onDelete('cascade'); // Ajout correct de user_id
-            $table->integer('amount');
             $table->string('payment_method');
             $table->timestamps();
         });

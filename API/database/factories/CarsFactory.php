@@ -15,7 +15,8 @@ class CarsFactory extends Factory
             'name' => $this->faker->word,
             'model' => $this->faker->word,
             'color' => $this->faker->word,
-            'year' => $this->faker->randomNumber()
+            'year' => $this->faker->randomNumber(),
+            'daily_rate' => $this->faker->randomNumber(2),
         ];
     }
 }

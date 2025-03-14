@@ -15,6 +15,7 @@ class Rentals extends Model
         'email',
         'phone',
         'from',
-        'to'
+        'to',
+        'total'
     ];
 }

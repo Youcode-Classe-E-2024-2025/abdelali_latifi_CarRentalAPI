@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('model');
             $table->string('color');
             $table->string('year');
+            $table->integer('daily_rate');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('cars');
     }
 };

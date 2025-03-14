@@ -17,9 +17,8 @@ class PaymentsFactory extends Factory
     public function definition(): array
     {
         return [
-            'rental_id' => '3',
-            'user_id' => '2',
-            'amount' => $this->faker->randomNumber(),
+            'rental_id' => '1',
+            'user_id' => '1',
             'payment_method' => $this->faker->word,
             'created_at' => $this->faker->dateTime(),
             'updated_at' => $this->faker->dateTime()

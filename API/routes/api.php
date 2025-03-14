@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RentalController;
-use App\Http\Controllers\paymentsController;
+use App\Http\Controllers\PaymentsController;
 
 
 /*
@@ -26,4 +26,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('cars', CarController::class);
 Route::apiResource(('rentals'), RentalController::class);
-Route::apiResource(('payments'), paymentsController::class);
+Route::apiResource(('payments'), PaymentsController::class);
