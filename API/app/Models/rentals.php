@@ -18,4 +18,16 @@ class Rentals extends Model
         'to',
         'total'
     ];
+
+    public function car()
+    {
+        return $this->belongsTo(Cars::class);
+    }
+
+    public function getDays()
+    {
+        $from = new \DateTime($this->from);
+        $to = new \DateTime($this->to);
+        return $from->diff($to)->days;
+    }
 }

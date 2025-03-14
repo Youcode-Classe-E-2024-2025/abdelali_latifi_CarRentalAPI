@@ -73,6 +73,7 @@ class ComposerStaticInited9c34e952a7c386d394bb7782a39204
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Stripe\\' => 7,
         ),
         'R' => 
         array (
@@ -271,6 +272,10 @@ class ComposerStaticInited9c34e952a7c386d394bb7782a39204
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
         'Ramsey\\Uuid\\' => 
         array (
