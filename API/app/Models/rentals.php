@@ -11,12 +11,9 @@ class Rentals extends Model
 
     protected $fillable = [
         'car_id',
-        'name',
-        'email',
-        'phone',
         'from',
         'to',
-        'total'
+        'total_price',
     ];
 
     public function car()

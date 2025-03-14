@@ -14,6 +14,6 @@ class Cars extends Model
         'model',
         'color',
         'year',
-        'pricePerDay',
+        'daily_rate',
     ];
 }
