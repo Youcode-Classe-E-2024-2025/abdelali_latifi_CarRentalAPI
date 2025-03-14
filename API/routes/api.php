@@ -27,3 +27,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('cars', CarController::class);
 Route::apiResource(('rentals'), RentalController::class);
 Route::apiResource(('payments'), PaymentsController::class);
+Route::apiResource(('user'), PaymentsController::class);
+
