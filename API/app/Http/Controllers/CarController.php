@@ -9,7 +9,7 @@ class CarController extends Controller
 {
     public function index()
     {
-        $cars = Cars::all();
+        $cars = Cars::paginate(5);
         return response()->json($cars);
     }
 
